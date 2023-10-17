@@ -1,4 +1,4 @@
-  /* sub2unlock by masdhika.com */
+   /* sub2unlock by masdhika.com */
 .masdhika-com{position:relative;text-align:center;display:inline-block;border-radius:5px;border:1px solid #ddd;color:#48525c;width:100%;padding:10px;box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;}
 
 .masdhika-com button {
@@ -13,7 +13,7 @@
   border: 0;
   line-height: 20px;
   font-size: 15px;
-  width: calc(80% - 40px);
+  width: 100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color:rgb(4, 4, 136);
   color: #fff;
@@ -44,7 +44,7 @@
   border: 0;
   line-height: 20px;
   font-size: 15px;
-  width: calc(80% - 40px);
+  width: 100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color:rgb(4, 4, 136);
   color: #fff;
@@ -63,7 +63,7 @@
 
 /*Style 2*/
 .masdhika-com button.style2 {
-  width: calc(80% - 40px);
+  width: 100%;
   align-items: center;
   appearance: none;
   background-image: radial-gradient(100% 100% at 100% 0, #5f0057 0, #66008f 100%);
@@ -127,7 +127,7 @@
   justify-content: space-between;
   margin: 10px auto;
   padding: 10px 25px;
-  width: calc(80% - 40px);
+  width: 100%;
   font-size: 15px;
 }
 
@@ -167,7 +167,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: auto;
+  width: 100%;
   will-change: transform, opacity;
   z-index: 0;
   display: inline-flex;
