@@ -1,0 +1,89 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+<div class="penuh" style='display:none; background:#fff;'> <!-- Div with class "penuh" -->
+    <div class="mt-8 text-center">
+        <div class="mb-4">
+            <a href='https://www.subs4unlock.com/p/panel-upload.html' class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full inline-flex items-center justify-center w-full">
+                <img src="https://i.ibb.co/HKpvg2v/images-5-removebg-preview.png" class="mr-2 w-8 h-8" />
+                <span class="text-lg">Panel Upload File</span>
+            </a>
+        </div>
+        <div class="mt-4" id="linkContainer">
+            <!-- Tempat untuk tautan hasil proses -->
+        </div>
+    </div>
+</div>
+<script>
+    function getQueryParam(param) {
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        return urlParams.get(param);
+    }
+    
+    function base64Decode(encodedValue) {
+        try {
+            const decodedString = atob(encodedValue);
+            return decodedString;
+        } catch (error) {
+            console.error('Error decoding base64:', error);
+            return null;
+        }
+    }
+
+    window.onload = function() {
+        const encodedValue = getQueryParam('dwn');
+        if (encodedValue) {
+            const fullDiv = document.querySelector('.penuh');
+            if (fullDiv) {
+                fullDiv.style.position = 'fixed';
+                fullDiv.style.top = '0';
+                fullDiv.style.left = '0';
+                fullDiv.style.width = '100%';
+                fullDiv.style.height = '100%';
+                fullDiv.style.zIndex = '9999';
+                fullDiv.style.display = 'flex';
+                fullDiv.style.justifyContent = 'center';
+                fullDiv.style.alignItems = 'center';
+                fullDiv.style.backgroundColor = '#fff';
+            }
+            const decodedValue = base64Decode(encodedValue);
+            if (decodedValue) {
+                const linkContainer = document.getElementById('linkContainer');
+                const linkTitle = decodedValue.split('/').pop().split('.').shift();
+                
+                const linkElement = document.createElement('a');
+                linkElement.href = '#';
+                linkElement.className = 'bg-green-500 hover:bg-green-700 text-white font-bold py-6 px-8 rounded-full inline-flex items-center justify-center w-full h-20';
+                linkElement.style.borderRadius = '10px';
+                let countdown = 3;
+                linkElement.innerHTML = '<i class="fas fa-download mr-2 text-xl"></i> Sedang diproses... ' + countdown;
+                linkContainer.appendChild(linkElement);
+                
+                linkElement.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // After 3 seconds, open the second link in the same tab
+                    setTimeout(function() {
+                        window.location.href = 'https://majorcharacter.com/bc3qVe0cP.3cpLv/bzmuVaJuZfDj0i0_O/DqQB1/MXTLcQ1ELKTOQS4pNMDpU/xDN/zXYH';
+                    }, 3000);
+                    
+                    // Open the first link in a new tab
+                    window.open(decodedValue, '_blank');
+                });
+
+                const countdownInterval = setInterval(function() {
+                    countdown--;
+                    if (countdown === 0) {
+                        clearInterval(countdownInterval);
+                        linkElement.href = decodedValue;
+                        linkElement.innerHTML = '<i class="fas fa-download mr-2 text-xl"></i>' + (linkTitle || 'Unduh di Sini');
+                    } else {
+                        linkElement.innerHTML = '<i class="fas fa-download mr-2 text-xl"></i> Sedang diproses... ' + countdown;
+                    }
+                }, 1000);
+            }
+        }
+    };
+</script>
+
+
