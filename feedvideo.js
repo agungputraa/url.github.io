@@ -36,7 +36,7 @@
 
             const wrapperDiv = document.createElement('div');
 
-            wrapperDiv.classList.add('w-full', 'h-screen', 'flex', 'items-center', 'justify-center', 'bg-blue-800'); // Add Tailwind CSS classes for styling
+            wrapperDiv.classList.add('w-full', 'h-screen', 'flex', 'items-center', 'justify-center', 'bg-blue-900'); // Add Tailwind CSS classes for styling
 
             // Create a button with double chevron icon
 
@@ -44,7 +44,7 @@
 
             downloadButton.innerHTML = 'Tonton Video <i class="fas fa-angle-double-right"></i>';
 
-            downloadButton.classList.add('btn', 'text-white', 'font-bold', 'py-4', 'px-8', 'rounded-full', 'bg-blue-900'); // Increase padding and font size
+            downloadButton.classList.add('bg-blue-800', 'text-white', 'border-none', 'px-6', 'py-3', 'text-center', 'text-lg', 'font-bold', 'rounded-full', 'shadow-lg'); // Increase padding and font size
 
              // Add event listener to fetch random post URL and redirect when the button is clicked
 
