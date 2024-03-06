@@ -8,5 +8,23 @@
     "id": "B25Gsv",
     "judul": "autoaim.so",
     "fileurl": "https://agungdev.id"
+  },
+  {
+    "name": "regedit.json",
+    "path": "regedit.json",
+    "sha": "e9eddffb944f8ad3a7b64d5bcc0db3aa24a07622",
+    "size": 204,
+    "url": "https://api.github.com/repos/AgungDevlop/url.github.io/contents/regedit.json?ref=main",
+    "html_url": "https://github.com/AgungDevlop/url.github.io/blob/main/regedit.json",
+    "git_url": "https://api.github.com/repos/AgungDevlop/url.github.io/git/blobs/e9eddffb944f8ad3a7b64d5bcc0db3aa24a07622",
+    "download_url": "https://raw.githubusercontent.com/AgungDevlop/url.github.io/main/regedit.json",
+    "type": "file",
+    "content": "WwogIHsKICAgICJpZCI6ICJBeFNodjIiLAogICAgImp1ZHVsIjogImxpYmls\nMmNwcC5zbyIsCiAgICAiZmlsZXVybCI6ICJodHRwczovL3d3dy5leGFtcGxl\nLmNvbS9maWxlLm1wNCIKICB9LAogIHsKICAgICJpZCI6ICJCMjVHc3YiLAog\nICAgImp1ZHVsIjogImF1dG9haW0uc28iLAogICAgImZpbGV1cmwiOiAiaHR0\ncHM6Ly9hZ3VuZ2Rldi5pZCIKICB9Cl0K\n",
+    "encoding": "base64",
+    "_links": {
+      "self": "https://api.github.com/repos/AgungDevlop/url.github.io/contents/regedit.json?ref=main",
+      "git": "https://api.github.com/repos/AgungDevlop/url.github.io/git/blobs/e9eddffb944f8ad3a7b64d5bcc0db3aa24a07622",
+      "html": "https://github.com/AgungDevlop/url.github.io/blob/main/regedit.json"
+    }
   }
 ]
